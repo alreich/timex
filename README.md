@@ -9,6 +9,5 @@ http://www2.cs.uregina.ca/~temporal/time94/time-94-papers.html
 The paper and it's associated temporal algebras can be optained from:
 https://www.researchgate.net/publication/220810644_Intervals_Points_and_Branching_Time
 
-
-
-
+The format of the file, timex.ttl, is "turtle" as described here:
+https://www.w3.org/TR/turtle/
