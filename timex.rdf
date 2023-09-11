@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#"
+     xml:base="http://www.semanticweb.org/areich/ontologies/2014/4/timeX"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#during"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#during -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#during">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantEquals -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantEquals">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.w3.org/2006/time#intervalEquals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantFinishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantFinishedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantFinishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantFinishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantFinishes">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantStartedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantStartedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantStarts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantStarts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#instantStarts">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalDuring -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalDuring">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/areich/ontologies/2014/4/timeX#during"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalEquals -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalEquals">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalFinishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalFinishes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#intervalStarts -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalStarts">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
